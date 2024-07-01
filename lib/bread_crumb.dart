@@ -1,12 +1,11 @@
 import 'package:uuid/uuid.dart';
 
 class BreadCrumb{
-  bool isActive;
+  bool isActive = false;
   final String name;
   final String id;
 
   BreadCrumb({
-    required this.isActive,
     required this.name
   }) : id = const Uuid().v4();
 

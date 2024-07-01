@@ -13,7 +13,7 @@ class BreadCrumbsWidget extends StatelessWidget {
     return Wrap(
       children: breadCrumbs.map(
         (element) => Text(
-          element.name,
+          element.title,
           style: TextStyle(
             color: element.isActive ? Colors.blue : Colors.black
           ),
